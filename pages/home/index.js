@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import FullFledgedBanner from "../../components/HomeComponents/FullFledgedBanner";
-import HomePageCategories from "../../components/HomeComponents/HomeCategories";
-import MostPopulerProduct from "../../components/HomeComponents/MostPopulerProduct";
-import RecommendedProducts from "../../components/HomeComponents/RecomondedProducts";
-import SubBanners from "../../components/HomeComponents/SubBanners";
-import HomePageTopBanner from "../../components/HomeComponents/TopBanner";
+import Footer from "../../componentss/Footer/Footer";
+import HomeCategories from "../../componentss/HomeComponents/HomeCategories/homecategories";
+import HomeFullFledgedBanner from "../../componentss/HomeComponents/HomeFullFledgedBanner/fullfledgedbanner";
+import HomePopulerProduct from "../../componentss/HomeComponents/HomeMostPopulerProduct/populerproduct";
+import HomeRecommendedProduct from "../../componentss/HomeComponents/HomeRecommendedProducts/recommendedProduct";
+import HomeSubBanners from "../../componentss/HomeComponents/HomeSubBanners/homesubbanner";
+import MobileAppBanner from "../../componentss/HomeComponents/MobileAppBanner/mobileappbanner";
+import TopBanner from "../../componentss/HomeComponents/TopBanner/topbanner";
+import Policys from "../../componentss/Policys/policy";
 import styles from "./home.module.css";
 function HomePage() {
   const [color, setColor] = useState("green");
@@ -14,12 +17,14 @@ function HomePage() {
   }, [color]);
   return (
     <>
-      <HomePageTopBanner />
-      <HomePageCategories />
-      <SubBanners />
-      <MostPopulerProduct />
-      <FullFledgedBanner />
-      <RecommendedProducts />
+      <TopBanner />
+      <HomeCategories />
+      <HomeSubBanners />
+      <HomePopulerProduct />
+      <HomeFullFledgedBanner />
+      <HomeRecommendedProduct />
+      <MobileAppBanner />
+      <Policys />
     </>
   );
 }

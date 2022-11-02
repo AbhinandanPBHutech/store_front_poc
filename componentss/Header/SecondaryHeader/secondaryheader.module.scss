@@ -1,0 +1,60 @@
+@import "../../../commonStyles/colors.module.scss";
+@import "../../../commonStyles/media-queries.module.scss";
+.container {
+  padding: 5px 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1%;
+  .container_main_row {
+    display: flex;
+    align-items: center;
+  }
+  .search_feild {
+  }
+  .whishlist_cart_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .whishlist_wrapper {
+      display: flex;
+      column-gap: 5px;
+      align-items: center;
+      cursor: pointer;
+      .whishlist_text {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    .cart_wrapper {
+      display: flex;
+      column-gap: 5px;
+      cursor: pointer;
+      .cart_text {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .cart_price {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $theme-clr;
+      }
+    }
+  }
+  .mobile_search {
+    display: none;
+    @include respond(sm) {
+      display: flex;
+    }
+  }
+}

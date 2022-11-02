@@ -1,0 +1,32 @@
+@import "../../../commonStyles/colors.module.scss";
+.container {
+  background-color: $theme-clr;
+  position: sticky;
+  z-index: +1000;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  .top_header_left_side {
+    display: flex;
+    padding-left: 1%;
+    .top_header_left_user_name {
+      text-underline-offset: 8px;
+      color: $top-header-text-clr;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .top_header_left_user_city {
+      color: $top-header-text-clr;
+      padding-left: 10px;
+    }
+  }
+  .top_header_right_side {
+    padding-right: 10px;
+  }
+  .top_header_right_side_text {
+    color: $top-header-text-clr;
+    font-weight: 700;
+  }
+}
